@@ -11,6 +11,7 @@ import Pages from './pages/Pages';
 import Data from './components/flashDeals/Data';
 import Sdata from './components/shops/Sdata';
 import Cart from './common/Cart/Cart';
+import Footer from './common/assets/footer/Footer';
 
 const App = () => {
   //stpe 1: fetch data from database
@@ -51,6 +52,7 @@ const App = () => {
             <Cart CartItem={cartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </>
   )
